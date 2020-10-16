@@ -1,0 +1,351 @@
+<html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Welcome to DemoApp</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid bgimg">
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <a class="navbar-brand text-white" href="#">DEMO APP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">JOBS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">CLIENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">EMPLOYERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container head-text">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="headText text-dark">I'm looking for..</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="search" name="inputText" placeholder="Enter a job description" class="searchButton">
+                </div>
+                <div class="col-md-3">
+                    <button type="button" name="button" class="btn btn-primary"><i class="fa fa-search"
+                            aria-hidden="true"></i>&nbsp;&nbsp;Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style=" margin-bottom: 14px;">
+                <div class="col-md-8">
+                    <div class="row text-white">
+                        <div class="col-md-3">
+                            <input type="checkbox" name="checkbox" value="Part time">Part time
+                        </div>
+                        <div class="col-md-4">
+                            <input type="checkbox" name="checkbox" value="Part time/Full-time">Part time/Full-time
+                        </div>
+                        <div class="col-md-5">
+                            <select class="form-control">
+                                <option value="">select your location</option>
+                                <option value="">Pune</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Ratnagiri</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Register
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input style="display: none;" type="file"
+                                                            (change)="getFile($event)" #fileinput>
+                                                        <img [src]="file? file : '../assets/images/girlicon.jpg'"
+                                                            height="100" width="100" class="image" alt="Italian Trulli">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <button (click)="fileinput.click()"
+                                                                    class="btn btn-primary">Upload Photo</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <form name="form" (ngSubmit)="f.form.valid && onSubmit()"
+                                                        #f="ngForm" novalidate>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+
+                                                                            <div class="form-group">
+
+                                                                                <input type="text"
+                                                                                    placeholder="First Name"
+                                                                                    class="form-control"
+                                                                                    name="firstName"
+                                                                                    [(ngModel)]="user.firstName"
+                                                                                    #firstName="ngModel"
+                                                                                    [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }"
+                                                                                    required>
+                                                                                <div *ngIf="f.submitted && firstName.invalid"
+                                                                                    class="invalid-feedback">
+                                                                                    <div
+                                                                                        *ngIf="firstName.errors.required">
+                                                                                        First Name is required</div>
+                                                                                </div>
+                                                                                <div *ngIf="firstName.errors.maxlength">First name not more than 20 characters</div>                                        
+                                                                            </div>
+                                                                            
+
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <div class="form-group">
+
+                                                                                <input type="text" name="lastName"
+                                                                                    placeholder="last Name"
+                                                                                    class="form-control"
+                                                                                    [(ngModel)]="user.lastName"
+                                                                                    #lastName="ngModel">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="email"
+                                                                            placeholder="Email" class="form-control"
+                                                                            [(ngModel)]="user.email" #email="ngModel">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col">
+                                                                            <input type="number" name="number"
+                                                                                placeholder="(541) 754-3010"
+                                                                                class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col">
+                                                                            <div class="state">
+                                                                                <select class="form-control">
+                                                                                    <option value="" disabled selected>
+                                                                                        State</option>
+                                                                                    <option value="">Maharastra</option>
+                                                                                    <option value="hurr">Karnataka
+                                                                                    </option>
+                                                                                    <option value="hurr">Nashik</option>
+                                                                                    <option value="hurr">Other</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col">
+                                                                            <div class="country">
+                                                                                <select class="form-control">
+                                                                                    <option value="Country" disabled
+                                                                                        selected>Country</option>
+                                                                                    <option value="">India</option>
+                                                                                    <option value="">America</option>
+                                                                                    <option value="">China</option>
+                                                                                    <option value="">Africa</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col">
+                                                                            <div class="state">
+                                                                                <select class="form-control">
+                                                                                    <option value="" disabled selected>
+                                                                                        Address</option>
+                                                                                    <option value="">Home</option>
+                                                                                    <option value="">Company</option>
+
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+
+                                                                    <label>Age</label>&nbsp;&nbsp;
+                                                                    <div class="slidecontainer">
+                                                                        <input type="range" min="1" max="100" value="50"
+                                                                            class="slider" id="myRange">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+
+                                                                    <label>
+                                                                        <input type="checkbox" checked="checked"
+                                                                            name="subscribe"> Daily Newsletter
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="text-center">
+
+                                                                        <button data-dismiss="modal"
+                                                                            class="btn btn-primary mr-1"
+                                                                            (click)=" onSubmit()">Submit</button>
+                                                                        <button class="btn btn-secondary"
+                                                                            type="reset">Cancel</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row bottom-head">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid middle-section">
+        <h2>We're leaders in </h2><br>
+        <h1>Creative Digital Recruitment</h1><br><br>
+        <hr class="text-primary line"><br><br>
+        <p class="para">
+            Based in Surry Hills,the creative hub of Sydney
+            we are surrounded by creativity <br>and that reflects on the type of jobs we recruit for.
+        </p>
+        <button type="submit" class="btn btn-outline-primary finding">Find out more about us!</button>
+        <br><br>
+    </div>
+    <div class="container-fluid contact">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Subscribe to our Job Seeker Mailing List</h3>
+                <button type="submit" class="btn btn-outline-light">Enter your Email Address
+                    &nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2014 Two Bytes Consulting <strong>Terms
+                        & Policies</strong></p>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="twitter">
+                    <i class="fa fa-twitter-square fab" aria-hidden="true"></i>&nbsp;&nbsp;twitter
+                </button>
+                <button type="button" class="twitter">
+                    <i class="fa fa-facebook-official fab" aria-hidden="true"></i>&nbsp;&nbsp;Likes
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

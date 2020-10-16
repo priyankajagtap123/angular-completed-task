@@ -1,0 +1,84 @@
+.bgimg
+{
+    background:url(../assets/images/officeimage.jpg)no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.headText
+{
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-top: 113px;
+}
+.searchButton
+{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.container
+{
+    text-align:center;
+}
+.bottom-head
+{
+    margin-top: 10px;
+    color: white;
+    padding: 50px;
+    letter-spacing: 2px;
+}
+.middle-section
+{
+    background-color: rgb(236, 232, 232);
+    text-align: center;
+    padding-top: 50px;
+}
+.line
+{
+    color: black;
+    background-color: rgb(73, 179, 164);
+    width: 227;
+    height: 3px;
+}
+.para
+{
+    text-align: center;
+    font-size: 26px;
+}
+.finding
+{
+    margin-bottom: 10px;
+}
+.contact
+{
+    background-color: black;
+    color: white;
+    padding: 41px;
+    text-align: center;
+}
+.active
+{
+    border-top-color: blue;
+    
+}
+.footer
+{
+    background-color: rgb(236, 232, 232);
+    text-align: center;
+    padding-top: 50px;
+}
+.twitter
+{
+    background-color: rgb(118, 118, 243);
+}
+.fab
+{
+    color:blue;
+}
+/* .file-input{
+    background-color: black;
+    color: white;
+    padding: 41px;
+    text-align: center;
+} */
